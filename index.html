@@ -3,10 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premier page</title>
-
+    <title>Formulaire d'Inscription et Connexion</title>
+    <link rel="stylesheet" href="fome.css">
 </head>
 <body>
-    <h2>L2 L2 informatique</h2>
+    <div class="contenu">
+    <!-- Formulaires -->
+        <div class="Inscription Enregistrement">
+            <form>
+            <h2>Enregistrement</h2>
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="E-mail">
+            <input type="password" placeholder="password">
+            <button>Enregistre</button>
+            <p>Vous enregistré dans notre platform</p>
+            <div class="social">
+                <a href=""><img src="d:\MINI PROET HTML, CSS, JAVA SCRIPT\images\47f9561ea8a5160484cfa85ba40188e1.jpg" alt="Facebook"></a>
+                <a href=""><img src="d:\MINI PROET HTML, CSS, JAVA SCRIPT\images\5ad183df5ed9c8c03cfb3c0d1dc51303.jpg" alt="Google"></a>
+                <a href=""><img src="d:\MINI PROET HTML, CSS, JAVA SCRIPT\images\316a0b2048bd0f809e9b23330b3dc0ad.jpg" alt="Whatsapp"></a>
+            </div>
+            </form>
+        </div>
+        <!--Formulaires  Connexion-->
+        <div class="Inscription connecte">
+            <form>
+                <h2>Sign In</h2>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="password">
+                <button>Sign In</button>
+            </form>
+        </div>
+        <!-- Panneau anime -->
+        <div class="panneau" id="moise">
+            <div class="anime">
+                <h2>Bienvenu</h2>
+                <p>Vous avez deja un compte ?</p>
+                <button id="loginbtn">Login</button>
+                <button id="enregistrebtn" class="hide">Enregistre</button>
+            </div>
+        </div>
+    </div>
+    <script src="fome.js"></script>
 </body>
 </html>

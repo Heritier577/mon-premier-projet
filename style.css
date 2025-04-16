@@ -1,0 +1,138 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #716d6d; 
+ }
+ .contenu{
+     border: 5px darkred;
+     position: relative;
+     width: 750px;
+     height: 450px;
+     background: #f4f4f4;
+     border-radius: 20px;
+     overflow: hidden;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+     display: flex;
+ }
+ .Inscription{
+     width: 50%;
+     padding: 40px;
+     transition: 0.5s ease-in-out;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     top: 0;
+     height: 100%;
+ }
+ .Enregistrement{
+     left: 0;
+     opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+ }
+ .connecte{
+     right:0;
+     opacity: 0;
+     pointer-events: none;
+     transition: opacity 0.5s ease-in-out;
+ 
+     }
+ form{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+ }
+ h2{
+     margin-bottom: 20px;
+ }
+ input{
+     width: 80%;
+     padding: 10px;
+     margin: 8px 0;
+     border: none;
+     background: #eaeaea;
+      border-radius: 5px;
+ }
+ button{
+     padding: 10px 20px;
+     background: #007bff;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-top: 10px;
+ }
+ button:hover{
+     background: #0056b3;
+ }
+ .social{
+     display: flex;
+     justify-content: center;
+     margin-top: 10px;
+ 
+ }
+ .social a{
+     margin: 0 5px;
+ }.social img{
+     width: 30px;
+     height: 30px;
+ }
+ /* panneau de bienvenu anime */
+ .panneau{
+     position: absolute;
+     width: 50%;
+     height: 100%;
+     background: linear-gradient(to right,#6a11cd, #2575fc );
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     top: 0;
+     left: 50%;
+     transition: 0.5s ease-in-out;
+     z-index: 10;
+     border-radius: 20px 0 0 20px;
+ }
+ .anime{
+     width: 80%;
+ }
+ .anime button{
+     background: transparent;
+     border: 1px solid white;
+ }
+ .anime button:hover{
+     background: white;
+     color: black;
+ }
+ .hide{
+     display:flexbox;
+ }
+ .contenu.sign-in-mode .anime{
+     left: 0;
+     border-radius: 0 20px 20px 0;
+ }
+ .contenu.sign-in-mode .Enregistrement{
+     transform: translateX(100%);
+     opacity: 0;
+     pointer-events: none;
+ 
+ }
+ .contenu.sign-in-mode .connecte{
+     opacity: 1;
+     pointer-events: auto;
+ }
+ .contenu.sign-in-mode #loginbtn{
+     display: none;
+ }
+ .contenu.sign-in-mode #nregistrebtn{
+     display: inline-block;
+ }
+ .contenu.sign-in-mode .panneau{
+     transform: translateX(-100%);
+ }
+ 
